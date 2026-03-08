@@ -527,39 +527,32 @@ const App: React.FC = () => {
           </p>
         </main>
 
-        {/* Footer Promotion */}
-        <footer className="bg-slate-800 text-slate-300 py-8 px-4 mt-auto border-t border-slate-700 no-print">
-          <div className="max-w-5xl mx-auto text-center">
-            <div className="mb-6 p-6 bg-gradient-to-r from-blue-900/40 to-indigo-900/40 rounded-2xl border border-blue-500/20 backdrop-blur-sm">
-              <p className="font-bold text-lg md:text-xl text-blue-200 mb-3 leading-relaxed">
-                ĐĂNG KÝ KHOÁ HỌC THỰC CHIẾN VIẾT SKKN, TẠO APP DẠY HỌC, TẠO MÔ PHỎNG TRỰC QUAN <br className="hidden md:block" />
-                <span className="text-yellow-400">CHỈ VỚI 1 CÂU LỆNH</span>
-              </p>
-              <a
-                href="https://tinyurl.com/khoahocAI2025"
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-2 px-8 py-3 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-full transition-all transform hover:-translate-y-1 shadow-lg shadow-blue-900/50"
-              >
-                ĐĂNG KÝ NGAY
-              </a>
-            </div>
+        {/* Author Section */}
+        <footer className="bg-slate-800 text-slate-300 py-10 px-4 mt-auto border-t border-slate-700 no-print">
+          <div className="max-w-3xl mx-auto">
+            <div className="flex flex-col md:flex-row items-center gap-6 p-8 bg-gradient-to-r from-slate-700/50 to-slate-800/50 rounded-3xl border border-slate-600/30 shadow-xl">
+              {/* Author Photo */}
+              <div className="w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden border-4 border-blue-400/50 shadow-lg shadow-blue-900/30 flex-shrink-0">
+                <img
+                  src="/data/author.png"
+                  alt="Nguyễn Khắc Phi"
+                  className="w-full h-full object-cover"
+                />
+              </div>
 
-            <div className="space-y-2 text-sm md:text-base">
-              <p className="font-medium text-slate-400">Mọi thông tin vui lòng liên hệ:</p>
-              <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-6">
-                <a
-                  href="https://www.facebook.com/tranhoaithanhvicko/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="hover:text-blue-400 transition-colors duration-200 flex items-center gap-2"
-                >
-                  <span className="font-bold">Facebook:</span> tranhoaithanhvicko
-                </a>
-                <div className="hidden md:block w-1.5 h-1.5 rounded-full bg-slate-600"></div>
-                <span className="hover:text-emerald-400 transition-colors duration-200 cursor-default flex items-center gap-2">
-                  <span className="font-bold">Zalo:</span> 0348296773
-                </span>
+              {/* Author Info */}
+              <div className="text-center md:text-left flex-1">
+                <p className="text-xs font-bold text-blue-400 uppercase tracking-widest mb-1">Tác giả</p>
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-1">Nguyễn Khắc Phi</h3>
+                <p className="text-base md:text-lg text-blue-300 font-semibold mb-3">Trung tâm Vạn Hạnh</p>
+                <div className="flex items-center justify-center md:justify-start gap-2">
+                  <span className="px-4 py-1.5 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-xs font-bold rounded-full shadow-md">
+                    ✨ New York English
+                  </span>
+                  <span className="px-4 py-1.5 bg-slate-600/50 text-slate-300 text-xs font-bold rounded-full border border-slate-500/30">
+                    AI Powered
+                  </span>
+                </div>
               </div>
             </div>
           </div>
