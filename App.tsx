@@ -299,7 +299,7 @@ const App: React.FC = () => {
                 <h1 className="text-lg md:text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-800 to-slate-600">
                   GIA SƯ TIẾNG ANH GIAO TIẾP
                 </h1>
-                <span className="text-xs text-gray-500 font-medium tracking-wider">English Communication Tutor by Tran Hoai Thanh</span>
+                <span className="text-xs text-gray-500 font-medium tracking-wider">English Communication Tutor by Nguyễn Khắc Phi</span>
               </div>
             </div>
             <div className="flex gap-2 flex-wrap justify-end">
