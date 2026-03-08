@@ -543,7 +543,7 @@ const App: React.FC = () => {
               {/* Author Photo */}
               <div className="w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden border-4 border-blue-400/50 shadow-lg shadow-blue-900/30 flex-shrink-0">
                 <img
-                  src="/data/author.png"
+                  src="/data/author.jpg"
                   alt="Nguyễn Khắc Phi"
                   className="w-full h-full object-cover"
                 />
@@ -553,7 +553,8 @@ const App: React.FC = () => {
               <div className="text-center md:text-left flex-1">
                 <p className="text-xs font-bold text-blue-400 uppercase tracking-widest mb-1">Tác giả</p>
                 <h3 className="text-2xl md:text-3xl font-bold text-white mb-1">Nguyễn Khắc Phi</h3>
-                <p className="text-base md:text-lg text-blue-300 font-semibold mb-3">Trung tâm Vạn Hạnh</p>
+                <p className="text-base md:text-lg text-blue-300 font-semibold mb-1">Trung tâm Vạn Hạnh</p>
+                <p className="text-sm text-slate-400 mb-3">📍 40 Thành Thái, phường Hưng Hòa, TP. Hồ Chí Minh</p>
                 <div className="flex items-center justify-center md:justify-start gap-2">
                   <span className="px-4 py-1.5 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-xs font-bold rounded-full shadow-md">
                     ✨ New York English
