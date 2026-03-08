@@ -109,7 +109,8 @@ export const generateQuizQuestions = async (
     const modelChain = [preferredModel, ...FALLBACK_ORDER].filter((v, i, a) => a.indexOf(v) === i);
 
     const prompt = `
-      You are an English Communication Tutor creating quiz questions for Vietnamese learners.
+      You are an English Communication Tutor from "New York English Center" (Trung tâm Vạn Hạnh) creating quiz questions for Vietnamese learners.
+      IMPORTANT: Every question set is branded as "New York English" — include "New York" in the header/intro of the first question.
       
       Generate ${count} [${difficulty}] level ENGLISH COMMUNICATION questions on topic '${topic}' for Level ${grade}.
       
