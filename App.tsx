@@ -10,6 +10,7 @@ import HistoryModal from './components/HistoryModal';
 import ChatWidget from './components/ChatWidget';
 import SettingsModal from './components/SettingsModal';
 import StudentLoginModal from './components/StudentLoginModal';
+import LessonViewer from './components/LessonViewer';
 
 const App: React.FC = () => {
   // Setup State
@@ -22,6 +23,7 @@ const App: React.FC = () => {
   // History State
   const [history, setHistory] = useState<QuizResult[]>([]);
   const [isHistoryOpen, setIsHistoryOpen] = useState(false);
+  const [isLessonOpen, setIsLessonOpen] = useState(false);
 
   // Settings State
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
@@ -323,6 +325,13 @@ const App: React.FC = () => {
                 <span className="hidden md:inline">Settings (API Key)</span>
               </button>
               <button
+                onClick={() => setIsLessonOpen(true)}
+                className="flex items-center gap-2 text-xs md:text-sm px-3 py-2 bg-purple-50 hover:bg-purple-100 text-purple-700 font-bold border border-purple-200 rounded-xl transition-all shadow-sm active:scale-95"
+              >
+                <BookOpen className="w-4 h-4" />
+                <span className="hidden md:inline">Học Tiếng Anh</span>
+              </button>
+              <button
                 onClick={() => setIsHistoryOpen(true)}
                 className="flex items-center gap-2 text-xs md:text-sm px-3 py-2 bg-white hover:bg-gray-50 text-gray-600 font-bold border border-gray-200 rounded-xl transition-all shadow-sm active:scale-95"
               >
@@ -582,6 +591,11 @@ const App: React.FC = () => {
       />
 
       <ChatWidget />
+
+      <LessonViewer
+        isOpen={isLessonOpen}
+        onClose={() => setIsLessonOpen(false)}
+      />
 
       <StudentLoginModal
         isOpen={isStudentLoginOpen}
