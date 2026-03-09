@@ -553,6 +553,7 @@ const App: React.FC = () => {
               <div className="text-center md:text-left flex-1">
                 <p className="text-xs font-bold text-blue-400 uppercase tracking-widest mb-1">Tác giả</p>
                 <h3 className="text-2xl md:text-3xl font-bold text-white mb-1">Nguyễn Khắc Phi</h3>
+                <p className="text-sm text-slate-300 mb-1">📞 <a href="tel:0901661068" className="text-blue-300 hover:text-blue-200 transition-colors">0901.66.1068</a></p>
                 <p className="text-base md:text-lg text-blue-300 font-semibold mb-1">Trung tâm Vạn Hạnh</p>
                 <p className="text-sm text-slate-400 mb-3">📍 40 Thành Thái, phường Hưng Hòa, TP. Hồ Chí Minh</p>
                 <div className="flex items-center justify-center md:justify-start gap-2">
