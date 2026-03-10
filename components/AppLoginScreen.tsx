@@ -27,7 +27,7 @@ const AppLoginScreen: React.FC<AppLoginScreenProps> = ({ onLoginSuccess }) => {
             <Lock className="w-10 h-10 text-white -rotate-3" />
           </div>
           <h2 className="text-3xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-700 to-purple-700">Đăng Nhập</h2>
-          <p className="text-gray-500 font-medium">Hệ Thống Trợ Lý Ảo Học Đinh</p>
+          <p className="text-gray-500 font-medium">Hệ Thống Trợ Lý Ảo Học Tiếng Anh</p>
         </div>
 
         <form onSubmit={handleLogin} className="p-8 pt-2 space-y-6">
@@ -86,3 +86,4 @@ const AppLoginScreen: React.FC<AppLoginScreenProps> = ({ onLoginSuccess }) => {
 };
 
 export default AppLoginScreen;
+
