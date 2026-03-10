@@ -11,8 +11,19 @@ import ChatWidget from './components/ChatWidget';
 import SettingsModal from './components/SettingsModal';
 import StudentLoginModal from './components/StudentLoginModal';
 import LessonViewer from './components/LessonViewer';
+import AppLoginScreen from './components/AppLoginScreen';
 
 const App: React.FC = () => {
+  // App Authentication State
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean>(() => {
+    return localStorage.getItem('app_authenticated') === 'true';
+  });
+
+  const handleAppLoginSuccess = () => {
+    localStorage.setItem('app_authenticated', 'true');
+    setIsAuthenticated(true);
+  };
+
   // Setup State
   const [level, setLevel] = useState<EducationLevel>('primary');
   const [grade, setGrade] = useState<number>(1);
@@ -252,6 +263,10 @@ const App: React.FC = () => {
   };
 
   // --- RENDER HELPERS ---
+
+  if (!isAuthenticated) {
+    return <AppLoginScreen onLoginSuccess={handleAppLoginSuccess} />;
+  }
 
   if (quizState.status === 'loading') {
     return (
